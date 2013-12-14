@@ -1,0 +1,141 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /*margin-bottom: 60px;*/
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-top: -90px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-caption h1 {
+  margin-bottom:50px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  font-size:18px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.apply { color: #fff; font-size:30px; width: 100%; padding:0 auto; }
+.apply a { color:#fff; font-weight:400; font-style: italic; }
+
+footer {
+  padding:0 10%;
+}
+
+
+/* Featurettes
+------------------------- */
+.apply {
+  background: #9dcb3b;
+  padding: 4% 10%; /* Space out the Bootstrap <hr> more */
+  text-align:center;
+}
+
+/* Thin out the apply headings */
+.apply {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.apply span a { padding:0 9%; }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    /*padding:0 10%;*/
+  }
+
+  .marketing p { padding:20px 0 30px 0; line-height:1.6; }
+  .marketing p b { color:#a9d152; font-size:20px; }
+  .about .row .blue b { font-weight:700; color:#075280; font-size:22px; }
+  .programs .row .blue { font-weight:400; color:#075280; font-size:48px; }
+  .after_hd { background:#0872b4; padding:2% 10%; color:#fff; } 
+  .after_hd a { color:#fff; font-weight:700; }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    /*margin-top: 20px;*/
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    padding:0 10%;
+    border:none;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
